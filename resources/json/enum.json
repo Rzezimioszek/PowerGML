@@ -1,0 +1,219 @@
+{"EGB_StatusPodmiotuEwid" : 
+{
+1:"osoba fizyczna",
+3:"skarb państwa",
+4:"gmina lub związek międzygminny",
+5:"sołectwo",
+6:"państwowa osoba prawna lub jednoosobowa spółka skarbu państwa",
+7:"państwowe gospodarstwo leśne lasy państwowe",
+8:"agencja nieruchomości rolnych",
+9:"agencja mienia wojskowego",
+11:"panstwowa jednostka organizacyjna bez osobowości prawnej",
+12:"gminna jednostka organizacyjna bez osobowości prawnej",
+13:"powiatowa jednostka organizacyjna bez osobowości prawnej",
+14:"wojewódzka jednostka organizacyjna bez osobowości prawnej",
+15:"gminna osoba prawna lub jednoosobowa spółka gminy",
+16:"powiatowa osoba prawna lub jednoosobowa spółka powiatu",
+17:"wojewódzka osoba prawna lub jednoosobowa spółka województwa",
+23:"spółdzielnia mieszkaniowa",
+24:"spółdzielnia lub zwiazek spółdzielni",
+25:"kościoły lub zwiazki wyznaniowe",
+26:"spółka handlowa nie będąca cudzoziemcem",
+27:"spółka handlowa będąca cudzoziemcem",
+28:"osoba prawna inna niż spółka handlowa będąca cudzoziemcem",
+29:"partia polityczna",
+30:"stowarzyszenie",
+31:"jednostka organizacyjna nie będąca osobą prawną ze zdolnoscią prawną",
+32:"podmioty pozostajace we współwlasności łacznej",
+33:"spółka cywilna",
+34:"małżenstwo obywateli polskich",
+35:"małżenstwo obywatela polski i cudzoziemca",
+36:"województwo",
+37:"powiat",
+38:"spółdzielnia Rolnicza",
+40:"właściciel nieustalony",
+41:"współnota gruntowa",
+42:"minister gospodarki morskiej",
+43:"prezes panstwowego gospodarstwa wodnego",
+44:"generalny dyrektor dróg krajowych i autostrad",
+45:"dyrektor parku narodowego",
+46:"marszałek wojewodztwa",
+47:"inne"
+}, 
+"EGB_Plec":
+{
+1 : "Mężczyzna",
+2: "Kobieta"
+},
+"EGB_RodzajPomieszczenia"
+{
+1: "piwnica",
+2: "garaż",
+3: "miejsce postojowe w garazu",
+4: "strych"
+5: "komorka"
+6: "inne"
+},
+"EGB_RodzajBloku":
+{
+"n": "kondygnacje nadziemne",
+"p" : "kondygnacje podziemne",
+"l": "łacznik",
+"a": "nawis",
+"z": "przejazd przez budynek",
+"y":"inny"
+},
+"EGB_RodzajObiektu":
+{
+"t": "taras",
+"w": "weranda ganek",
+"i": "wiatrołap",
+"s": "schody",
+"r": "rampa",
+"o": "podpora",
+"j": "wjazd do podziemia",
+"d": "podjazd dla osob niepelnosprawnych"
+},
+"EGB_RodzajWgKST":
+{
+"m": "mieszkalny",
+"g": "produkcyjny usługowy i gospodarczy",
+"t": "transportu i łacznosci",
+"k": "oświaty, nauki, kultury oraz sportu",
+"z": "szpitala i inne budynki opieki zdrowotnej",
+"b": "biurowy",
+"h": "handlowo-usługowy",
+"p": "przemysłowy",
+"s": "zbiornik, silos i budynek magazynowy",
+"i": "budynek niemieszkalny"
+},
+"EGB_RodzajLokalu":
+{
+1: "mieszkalny",
+2: "niemieszkalny"
+},
+"EGB_ZapisPowDzialki":
+{
+1: "Dokładność do m2",
+2: "Dokładność do ara"
+},
+"EGB_GrupaRej":
+{
+1: "Skarb Państwa",
+2: "Skarb Państwa ZUW",
+3: "panstwowa osoba prawna",
+4: "gminy i zwiazki międzygminne",
+5: "gminy i zwiazki międzygminne  ZUW",
+6: "JST osoba prawna",
+7: "osoby fizyczne",
+8: "społdzielnie",
+9: "koscioły i zwiazki wyznaniowe",
+10: "wspolnota gruntowa",
+11: "powiaty i związki powiatow",
+12: "powiaty i związki powiatow ZUW",
+13: "wojewodztwa",
+14: "wojewodztwa ZUW",
+15: "społki prawa handlowego",
+16: "inne podmioty"
+},
+"EGB_OFU":
+{
+"R":"grunt orny",
+"S":"sad",
+"Ł":"łąka trwała",
+"Ps":"pastwisko trwałe",
+"Br":"grunt rolny zabudowany",
+"Wsr":"grunt pod stawem",
+"W":"grunt pod rowem",
+"Lzr":"grunt rolny zadrzewiony i zakrzewiony",
+"Ls":"las",
+"Lz":"grunt zadrzewiony i zakrzewiony",
+"B":"teren mieszkaniowy",
+"Ba":"teren przemysłowy",
+"Bi":"inny teren zabudowany",
+"Bp":"zurbanizowany teren niezabudowany lub w trakcie zabudowy",
+"Bz":"teren rekreacyjno-wypoczynkowy",
+"K":"użytek kopalny",
+"dr":"droga",
+"Tk":"teren kolejowy",
+"Ti":"inny teren komunikacyjny",
+"Tp":"grunt przeznaczony pod budowe dróg publicznych lub linii kolejowych",
+"N":"nieużytek",
+"Wp":"grunt pod wodami powierzchniowymi płynącymi",
+"Ws":"grunt pod wodami powierzchniowymi stojacymi",
+"Tr":"teren różny"
+},
+"EGB_OZU":
+{
+"R": "grunt orny",
+"Ł": "łąka trwałe",
+"Ps": "pastwisko trwałe",
+"Ls": "las",
+"Lz": "grunt zadrzewiony i zakrzewiony",
+"N": "nieuzytek"
+},
+"EGB_RodzajPrawa":
+{
+1: "własność",
+2: "władanie samoistne"
+},
+"EGB_RodzajWladania":
+{
+1: "użytkowanie wieczyste",
+2: "trwaly zarząd",
+3: "zarząd",
+4: "użytkowanie",
+5: "inny rodzaj władania",
+6: "wykonywanie prawa wlasnosci SP i innych praw rzeczowych",
+7: "gospodarowanie zasobem nieruchomosci SP Lub Gminy, Powiatu, Województwa",
+8: "gospodarowanie gruntem SP pokrytym wodami powierzchniowymi",
+9: "wykonywanie zadan zarzadcy dróg publicznych"
+},
+"EGB_SpelnienieWarunkowDokladnosciowych":
+{
+1: "spełnia",
+2: "niespełnia"
+},
+"EGB_KodStabilizacji"
+{
+1: "brak informacji",
+2: "niestabilizowany",
+3: "znak naziemny",
+4: "znak naziemny i podziemny",
+5: "znak podziemny",
+6: "szczegół terenowy"
+},
+"EGB_SposobPozyskania":
+{
+1: "ustalony"
+2: "nieustalony"
+},
+"EGB_RodzajDokumentu":
+{
+1: "umowa akt notarialny",
+2: "akt własnosci ziemi",
+3: "decyzja admin inna niż AWZ",
+4: "orzeczenie sądu postanowienie wyrok",
+5: "wyciąg odpis z Ksiegi Wieczystej",
+6: "wyciag odpis z Ksiegi Hipotecznej",
+7: "odpis akt KW lub Zbioru Dokumentu",
+8: "zawiadomienie z wydziału KW",
+9: "wniosek w sprawie zmiany",
+10: "wyciąg z dokumentacji budowy budynku",
+11: "protokoł",
+12: "ustawa",
+13: "rozporządzenie",
+14: "uchwała",
+15: "zarządzenie",
+16: "odpis wyciag z innego rejestru publicznego",
+17: "pełnomocnictwo",
+19: "inny dokument",
+20: "dokument architektoniczo-budowlane",
+21: "dokument planistyczny",
+22: "akt poświadczenia dziedziczenia",
+23: "zawiadomienie z PESEL",
+24: "zgłoszenie zmiany sposobu użytkowania"
+}
+}
+
+
