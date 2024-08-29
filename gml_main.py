@@ -17,7 +17,7 @@ from gml_xlsx import save_xlsx
 from gml_dict import get_gml_version, read_dict
 from gml_ezdxf import Drawing
 
-build_ver = '0.1'
+build_ver = '0.2'
 class GmlGUI:
     def __init__(self):
 
@@ -32,6 +32,9 @@ class GmlGUI:
         self.root.geometry(f"{width}x{height}")
         self.root.minsize(width, height)
         self.root.maxsize(width, 8000)
+
+        if os.path.exists("resources/ico/icon.ico"):
+            self.root.iconbitmap("resources/ico/icon.ico")
 
         self.root.rowconfigure((0, 1, 3, 4), weight=1)
         self.root.rowconfigure(2, weight=10)
@@ -218,7 +221,7 @@ class GmlGUI:
 
         # Wczytanie GMLa do słownika
         try:
-            bdict, tags = read_dict(path)
+            bdict, tags, uzytki = read_dict(path)
             self.prog_bar.step(30)
         except Exception as e:
             msg.showerror("Błąd DICT"
@@ -248,10 +251,13 @@ class GmlGUI:
                 msg.showerror("Błąd SQL"
                               , f"Błąd podczas tworzenia pliku SQLite3 (.db).\n\n{e}")
 
+        # TODO tabela użytki
+
         # Utworzenie Relacji
         if self.v_rsql.get() and version == '2021':
             try:
-                read_sqlite_query(bdict, svd_path, self.v_sql.get())
+                read_sqlite_query(bdict, svd_path, self.v_sql.get(), uzytki)
+
                 self.prog_bar.step(15)
             except Exception as e:
                 msg.showerror("Błąd SQL"

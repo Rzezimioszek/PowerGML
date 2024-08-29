@@ -104,6 +104,7 @@ def read_dict(path):
 
     bdict = dict()
     tags = dict()
+    uzytki = []
 
     for child in root:
         i += 1
@@ -113,6 +114,7 @@ def read_dict(path):
         ali = [elem.attrib for elem in child.iter()]
         j = 0
         name = ''
+        uzytek = dict()
         for elem in child.iter():
             # print(j, elem.tag.split('}')[-1].strip(), elem.text)
 
@@ -128,6 +130,15 @@ def read_dict(path):
 
                 temp_tag = elem.tag.split('}')[-1].strip()
                 val = elem.text.strip()
+
+                if name == 'EGB_DzialkaEwidencyjna' and temp_tag in ['idDzialki', 'OFU', 'OZU', 'OZK', 'powierzchnia']:
+                    uzytek[temp_tag] = val.strip()
+                    if temp_tag == 'powierzchnia':
+                        uzytki.append(uzytek)
+                        iddz = uzytek['idDzialki']
+                        uzytek = dict()
+                        uzytek['idDzialki'] = iddz
+
 
                 if temp_tag in sdict.keys():
                     # print(type(sdict[temp_tag]), sdict[temp_tag])
@@ -167,6 +178,7 @@ def read_dict(path):
 
                     break
 
+
         if len(name) > 31:
             name = name[:31]
 
@@ -192,7 +204,9 @@ def read_dict(path):
             else:
                 tags[key] = set(val)
 
-    return bdict, tags
+    # print(uzytki)
+
+    return bdict, tags, uzytki
 
 def get_gml_version(path):
     version = '2021'

@@ -2,7 +2,7 @@ import sqlite3
 import os
 from gml_xlsx import save_xlsx
 
-def read_sqlite_query(bdict, path, delete: bool = False):
+def read_sqlite_query(bdict, path, delete: bool = False, uzytki = None):
 
     db_path = path + '.db'
 
@@ -745,10 +745,16 @@ def read_sqlite_query(bdict, path, delete: bool = False):
 
     relacja['Punkty_Graniczne'] = nvalues
 
+    # TODO tabela użytki
+
     cursor = None
     conn.close()
     conn = None
 
+
+    # save_xlsx(relacja, f"{path}-relacja")
+
+    relacja['Użytki'] = uzytki
 
     save_xlsx(relacja, f"{path}-relacja")
 

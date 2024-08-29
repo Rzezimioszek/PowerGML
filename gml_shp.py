@@ -3,6 +3,10 @@ import shutil as s
 import shapefile
 
 
+def save_kontur_shp():
+    # properties = bdict['EGB_DzialkaEwidencyjna']
+    ...
+
 def save_dz_shp(bdict, path):
     properties = bdict['EGB_DzialkaEwidencyjna']
 
